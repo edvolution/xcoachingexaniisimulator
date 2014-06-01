@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"    
+    tools:context="com.xcoaching.exanii.simulator.activities.ExaniiSimulatorInstructions$PlaceholderFragment" >
+
+    <LinearLayout
+            android:id="@+id/instructions_buttons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_alignParentBottom="true">
+            
+       <Button
+           android:id="@+id/simulator_instructions_button"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:onClick="displayTestCover"
+           android:text="@string/exanii_simulator_continue_button_text"
+           android:textSize="@dimen/exanii_simulator_button_text_size"
+           android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/instructions_buttons"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin" >
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">                
+
+          <TextView
+              android:id="@+id/simulator_instructions_body"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/exanii_simulator_instructions_body"
+              android:textSize="@dimen/exanii_simulator_instructions_body" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

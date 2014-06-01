@@ -1,0 +1,241 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"    
+    tools:context="com.xcoaching.exanii.simulator.activities.ExaniiSimulatorTestCover$PlaceholderFragment" >
+
+    <LinearLayout
+        android:id="@+id/exanii_simulator_test_cover_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/exanii_simulator_test_cover_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exanii_simulator_start_button_text"
+            android:textSize="@dimen/exanii_simulator_button_text_size"
+            android:textStyle="bold"             
+            android:onClick="displayStartActivity"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/exanii_simulator_test_cover_scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/exanii_simulator_test_cover_buttons"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/exanii_simulator_test_cover_exam_padding_left"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/exanii_simulator_test_cover_exam_type_table_align_top"
+        android:scrollbars="vertical" >
+    	
+		<TableLayout
+		    android:id="@+id/exanii_simulator_test_cover_exam_type_table"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" >
+		    
+			<TableRow
+			    android:id="@+id/exanii_simulator_test_cover_logo_row"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" >
+
+				<ImageView
+				    android:id="@+id/exanii_simulator_test_cover_logo_image"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_span="5"
+				    android:contentDescription="@string/exanii_simulator_test_cover_image_text"
+				    android:gravity="center_horizontal"
+				    android:src="@drawable/exanii_simulator_gray_logo" 
+				   android:background="@android:color/transparent"/>
+	        
+	        </TableRow>	
+	        		    
+			
+		    <TableRow
+	            android:id="@+id/exanii_simulator_test_cover_title_row"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content">
+		            	            		
+				<TextView
+		             android:id="@+id/exanii_simulator_test_cover_title"
+		             android:gravity="center_horizontal"             
+		             android:text="@string/exanii_simulator_test_cover_title_text"
+		             android:textSize="@dimen/exanii_simulator_small_title_size"
+		             android:textStyle="bold" 
+		             android:padding="@dimen/exanii_simulator_test_cover_exam_type_table_row_large_padding"
+		             android:layout_span="5"/>				
+	        
+	        </TableRow>	
+	        
+	        <TableRow
+	            android:id="@+id/exanii_simulator_test_cover_subtitle_row"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content">
+			
+			<TextView
+			    android:id="@+id/exanii_simulator_test_cover_subtitle"	
+			 	android:gravity="center_horizontal"    
+			    android:padding="@dimen/exanii_simulator_test_cover_exam_type_table_row_large_padding"
+			    android:text="@string/exanii_simulator_test_cover_subtitle_text"
+			    android:textSize="@dimen/exanii_simulator_medium_title_size"
+			    android:textStyle="bold" 
+			    android:layout_span="6"/>		
+			    
+	        </TableRow>		    
+        
+	        <TableRow
+	            android:id="@+id/exanii_simulator_test_cover_exam_type_data_row"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content">
+	            
+				<TextView
+				    android:id="@+id/exanii_simulator_test_cover_selection_data"
+				    android:padding="@dimen/exanii_simulator_test_cover_exam_type_table_row_med_padding"
+				    android:text="@string/exanii_simulator_test_cover_selection_data_text"
+				    android:textSize="@dimen/exanii_simulator_medium_title_size"
+				    android:textStyle="bold" />
+				
+			    <TextView
+			        android:id="@+id/exanii_simulator_test_cover_exam_number"
+			        android:background="@drawable/border"
+			        android:padding="@dimen/exanii_simulator_test_cover_exam_type_table_row_med_padding"
+			        android:text="@string/exanii_simulator_test_cover_exam_number_text"
+			        android:textSize="@dimen/exanii_simulator_medium_title_size"
+			        android:textStyle="bold" />
+			    
+			    <TextView
+			        android:id="@+id/exanii_simulator_test_cover_exam_type_empty_row"
+			        android:padding="@dimen/exanii_simulator_test_cover_exam_type_table_row_med_padding"/>
+			    			    
+			    <TextView
+			        android:id="@+id/exanii_simulator_test_cover_exam_number_1"
+			        android:background="@drawable/border"
+			        android:padding="@dimen/exanii_simulator_test_cover_exam_type_table_row_med_padding"
+			        android:text="@string/exanii_simulator_test_cover_exam_notebook1_text"
+			        android:textSize="@dimen/exanii_simulator_medium_title_size"
+			        android:textStyle="bold" />
+			    
+			    <TextView
+			        android:id="@+id/exanii_simulator_test_cover_exam_notebook_2"
+			        android:background="@drawable/border"
+			        android:padding="@dimen/exanii_simulator_test_cover_exam_type_table_row_med_padding"
+			        android:text="@string/exanii_simulator_test_cover_exam_notebook2_text"
+			        android:textSize="@dimen/exanii_simulator_medium_title_size"
+			        android:textStyle="bold" />						   
+	            
+	        </TableRow>
+	        
+	        <TableRow
+	            android:id="@+id/exanii_simulator_test_cover_exam_type_data_labels_row"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content">		              
+	            
+				<TextView
+				    android:id="@+id/exanii_simulator_test_cover_selection_data_empty_row"/>
+				
+			    <TextView
+			        android:id="@+id/exanii_simulator_test_cover_exam_number_label"
+			        android:padding="@dimen/exanii_simulator_test_cover_exam_type_table_row_small_padding"
+			        android:text="@string/exanii_simulator_test_cover_exam_number_label_text"
+			        android:textSize="@dimen/exanii_simulator_xxsmall_title_size"
+			        android:textStyle="bold" />
+			    
+			    <TextView
+			        android:id="@+id/exanii_simulator_test_cover_exam_labels_empty_row" />
+			    			    
+			    <TextView
+			        android:id="@+id/exanii_simulator_test_cover_exam_notebook_labels_row"			       
+			        android:padding="@dimen/exanii_simulator_test_cover_exam_type_table_row_small_padding"
+			        android:text="@string/exanii_simulator_test_cover_exam_notebook_label_text"
+			        android:textSize="@dimen/exanii_simulator_xxsmall_title_size"
+			        android:textStyle="bold" 
+			        android:layout_span="2"/>			    	 			                  	          
+	        </TableRow>
+			
+			<TableRow
+	            android:id="@+id/exanii_simulator_test_cover_applicant_data_row"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content">
+	            
+				<TextView
+				    android:id="@+id/exanii_simulator_test_cover_applicant_name_label"
+				    android:padding="@dimen/exanii_simulator_test_cover_exam_type_table_row_med_padding"
+				    android:text="@string/exanii_simulator_test_cover_applicant_name_label"
+				    android:textSize="@dimen/exanii_simulator_xsmall_title_size"
+				    android:textStyle="bold" />
+
+				<EditText
+				    android:id="@+id/exanii_simulator_test_cover_applicant_name_input"
+				    android:inputType="textPersonName" 
+				    android:layout_span="4">
+				</EditText>
+	        
+	        </TableRow>
+	        <TableRow
+	            android:id="@+id/exanii_simulator_test_cover_applicant_id_row"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content">
+	            
+				<TextView
+				    android:id="@+id/exanii_simulator_test_cover_applicant_id_label"
+				    android:padding="@dimen/exanii_simulator_test_cover_exam_type_table_row_med_padding"
+				    android:text="@string/exanii_simulator_test_cover_applicant_id_label"
+				    android:textSize="@dimen/exanii_simulator_xsmall_title_size"
+				    android:textStyle="bold" />
+
+				<EditText
+				    android:id="@+id/exanii_simulator_test_cover_applicant_id_input"
+				    android:inputType="number" 
+				    android:layout_span="4">
+				</EditText>
+	        
+	        </TableRow>
+	        <TableRow
+	            android:id="@+id/exanii_simulator_test_cover_applicant_user_id"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content">
+	            
+				<TextView
+				    android:id="@+id/exanii_simulator_test_cover_applicant_user_label"
+				    android:padding="@dimen/exanii_simulator_test_cover_exam_type_table_row_med_padding"
+				    android:text="@string/exanii_simulator_test_cover_applicant_session_label"
+				    android:textSize="@dimen/exanii_simulator_xsmall_title_size"
+				    android:textStyle="bold" />
+
+				<EditText
+				    android:id="@+id/exanii_simulator_test_cover_applicant_user_input"
+				    android:background="@drawable/border"
+				    android:layout_span="4"
+				    android:inputType="text" >
+				</EditText>
+	        
+	        </TableRow>	     
+	        <TableRow
+	            android:id="@+id/exanii_simulator_test_cover_applicant_user_pwd"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content">
+	            
+				<TextView
+				    android:id="@+id/exanii_simulator_test_cover_applicant_pwd_label"
+				    android:padding="@dimen/exanii_simulator_test_cover_exam_type_table_row_med_padding"
+				    android:text="@string/exanii_simulator_test_cover_applicant_pwd_label"
+				    android:textSize="@dimen/exanii_simulator_xsmall_title_size"
+				    android:textStyle="bold" />
+
+				<EditText
+				    android:id="@+id/exanii_simulator_test_cover_applicant_pwd_input"
+				    android:background="@drawable/border"
+				    android:layout_span="4"
+				    android:inputType="textPassword" >
+				</EditText>
+	        
+	        </TableRow>	           
+		</TableLayout>
+    </ScrollView>
+
+</RelativeLayout>

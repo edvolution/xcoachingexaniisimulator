@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xcoaching.exanii.simulator"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.xcoaching.exanii.simulator.activities.ExaniiSimulatorWelcomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.xcoaching.exanii.simulator.activities.ExaniiSimulatorInstructionsActivity"
+            android:label="@string/exanii_simulator_title_activity_exanii_simulator_instructions"
+            android:parentActivityName="com.xcoaching.exanii.simulator.activities.ExaniiSimulatorWelcomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.xcoaching.exanii.simulator.ExaniiSimulatorWelcomeActivity" />
+        </activity>
+        <activity
+            android:name="com.xcoaching.exanii.simulator.activities.ExaniiSimulatorTestCoverActivity"
+            android:label="@string/exanii_simulator_title_activity_exanii_simulator_test_cover"
+            android:parentActivityName="com.xcoaching.exanii.simulator.activities.ExaniiSimulatorInstructionsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.xcoaching.exanii.simulator.ExaniiSimulatorInstructionsActivity" />
+        </activity>
+        <activity
+            android:name="com.xcoaching.exanii.simulator.activities.ExaniiSimulatorStartActivity"
+            android:label="@string/title_activity_exanii_simulator_start"
+            android:parentActivityName="com.xcoaching.exanii.simulator.activities.ExaniiSimulatorTestCoverActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.xcoaching.exanii.simulator.ExaniiSimulatorTestCoverActivity" />
+        </activity>
+    </application>
+
+</manifest>

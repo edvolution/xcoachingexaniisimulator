@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">X-Coaching</string>
+    <string name="action_settings">Settings</string>
+    <string name="exanii_simulator_welcome_msg_title_text">EXANI-I Examen Muestra</string>
+    <string name="exanii_simulator_welcome_msg_body_text">A continuación verás una versión del EXANI-I, muy parecida a la que habrás de presentar; resuélvela para que tengas una idea de los contenidos que ya manejas bien y los que debes todavía repasar para tener éxito en tu examen de ingreso.\n\nEncontrarás, en primer lugar, el ejemplo de una carátula de un cuadernillo de preguntas en la que aparece el número que identifica la versión del examen (en este caso el 01). Posteriormente, encontrarás las instrucciones generales para la resolución del examen.\n\nEste examen de práctica es una herramienta para prepararte mejor. Lee con cuidado las instrucciones antes de empezar a resolver el examen. Encontrarás instrucciones similares cuando presentes el EXANI-I. Cuando hayas terminado el examen de práctica compara tus resultados con los de tus compañeros que también quieren ingresar a la educación media superior. Revisa tus respuestas con ellos o con tus maestros para aclarar dudas. \n\n</string>
+    <string name="exanii_simulator_title_activity_exanii_simulator_test_cover">X-Coaching: Portada EXANI-I</string>
+    <string name="exanii_simulator_title_activity_exanii_simulator_instructions">X-Coaching: Instrucciones EXANI-I</string>
+    <string name="exanii_simulator_instructions_body">En las preguntas de práctica encontrarás 128 reactivos. Las preguntas que contiene están relacionadas con contenidos temáticos que has aprendido durante tu educación secundaria, pero no necesariamente serán los contenidos que estarán incluidos en el EXANI-I.\n\n1. Escribe tu nombre completo en las portada del examen que aparecen en la siguiente página\n\n2. En el frente de tu hoja de respuestas escribe el número de examen y los números de cuadernillo que aparecen impresos en la portada del Examen de selección.\n\n3.Al empezar a resolver cada examen deberás leer con mucha atención cada pregunta antes de seleccionar tu respuesta. Recuerda que para cada pregunta hay cuatro opciones de respuesta, identificadas con las letras A, B, C y D, y que solo una es la correcta.\n\n4. Para efectuar la selección de tu respuesta en cada reactivo deberás presionar el círculo que contiene la letra correspondiente a la opción que consideres correcta, y que está en el renglón señalado con el número del reactivo que estás resolviendo.\n\n5. No te detengas en las preguntas que sientas particularmente difíciles. Selecciona una respuesta, la que consideres acertada, y continúa con el examen.\n\n6. Al finalizar el examen regresa a estas preguntas y revisa tus respuestas.\n\n7. Contesta todas las preguntas, aunque no estés completamente seguro de cuál es la respuesta para algunas de ellas. Es importante que NO dejes preguntas sin contestar.\n\n8. El EXANI-I no tiene preguntas capciosas. Si alguna te resulta particularmente fácil ¡NO ES CAPCIOSA! ¡ES FÁCIL! Respóndela y continúa el examen.\n\n9.Al finalizar, firma tu hoja de respuestas.</string>
+    <string name="exanii_simulator_continue_button_text">Continuar</string>
+    <string name="exanii_simulator_start_button_text">Comenzar</string>
+    <string name="exanii_simulator_test_cover_image_text">Test Cover Header</string>
+    <string name="exanii_simulator_test_cover_title_text">EXAMEN NACIONAL DE INGRESO A LA EDUCACIÓN MEDIA SUPERIOR</string>
+    <string name="exanii_simulator_test_cover_subtitle_text">EXANI-I INTEGRADO</string>
+    <string name="exanii_simulator_test_cover_selection_data_text">Selección</string>
+    <string name="exanii_simulator_test_cover_exam_number_text">03</string>
+    <string name="exanii_simulator_test_cover_exam_notebook1_text">0</string>
+    <string name="exanii_simulator_test_cover_exam_notebook2_text">1</string>
+    <string name="exanii_simulator_test_cover_exam_number_label_text">EXAMEN</string>
+    <string name="exanii_simulator_test_cover_exam_notebook_label_text">CUADERNILLO</string>
+    <string name="exanii_simulator_test_cover_applicant_name_label">NOMBRE DEL SUSTENTANTE</string>
+    <string name="exanii_simulator_test_cover_applicant_id_label">NÚMERO DE FOLIO DEL PASE DE INGRESO</string>
+    <string name="exanii_simulator_test_cover_applicant_session_label">USUARIO</string>
+    <string name="exanii_simulator_test_cover_applicant_pwd_label">CONTRASEÑA</string>
+    <string name="title_activity_exanii_simulator_start">Menú Principal</string>
+
+</resources>
