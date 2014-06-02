@@ -9,7 +9,7 @@ public class ExaniSimulatorUserContract {
 	public ExaniSimulatorUserContract() {
 		
 	}
-    public static abstract class ExanniSimulatorUser implements BaseColumns {
+    public static abstract class ExaniiSimulatorUser implements BaseColumns {
     	public static final String TABLE_NAME = "user";
         public static final String COLUMN_NAME_USER_ID = "userId";
         public static final String COLUMN_NAME_USER_NAME = "userName";

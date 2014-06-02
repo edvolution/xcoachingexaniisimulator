@@ -1,6 +1,9 @@
 package com.xcoaching.exanii.simulator.data.datasources;
 
-import com.xcoaching.exanii.simulator.data.contracts.ExaniSimulatorUserContract.ExanniSimulatorUser;
+import org.apache.commons.codec.digest.DigestUtils;
+
+import com.xcoaching.exanii.simulator.activities.ExaniiSimulatorTestCoverActivity;
+import com.xcoaching.exanii.simulator.data.contracts.ExaniSimulatorUserContract.ExaniiSimulatorUser;
 import com.xcoaching.exanii.simulator.data.helpers.ExaniiSimulatorDBOpenHelper;
 import com.xcoaching.exanii.simulator.data.models.User;
 
@@ -15,7 +18,7 @@ public class UserDataSource {
 	// Database fields
 	  private SQLiteDatabase database;
 	  private ExaniiSimulatorDBOpenHelper exaniiSimulatorDBOpenHelper;
-	  private String[] allUserColumns = { ExanniSimulatorUser.COLUMN_NAME_USER_ID, ExanniSimulatorUser.COLUMN_NAME_USER_NAME, ExanniSimulatorUser.COLUMN_NAME_PASSWORD};
+	  private String[] allUserColumns = { ExaniiSimulatorUser.COLUMN_NAME_USER_ID, ExaniiSimulatorUser.COLUMN_NAME_USER_NAME, ExaniiSimulatorUser.COLUMN_NAME_PASSWORD};
 	  
 	  public UserDataSource(Context context) {
 		  exaniiSimulatorDBOpenHelper = new ExaniiSimulatorDBOpenHelper(context);
@@ -29,19 +32,12 @@ public class UserDataSource {
 		  exaniiSimulatorDBOpenHelper.close();
 	  }
 
-	  public User createUser(String userName, String password) {
-	    /*ContentValues values = new ContentValues();
-	    values.put(MySQLiteHelper.COLUMN_COMMENT, comment);
-	    long insertId = database.insert(MySQLiteHelper.TABLE_COMMENTS, null,
-	        values);
-	    Cursor cursor = database.query(MySQLiteHelper.TABLE_COMMENTS,
-	        allColumns, MySQLiteHelper.COLUMN_ID + " = " + insertId, null,
-	        null, null, null);
-	    cursor.moveToFirst();
-	    Comment newComment = cursorToComment(cursor);
-	    cursor.close();
-	    return newComment;*/
-		  return null;
+	  public long createUser(String userName, String password) {		  		 
+		  ContentValues values = new ContentValues();
+		  values.put(ExaniiSimulatorUser.COLUMN_NAME_USER_NAME, userName);		  
+		  values.put(ExaniiSimulatorUser.COLUMN_NAME_USER_NAME, DigestUtils.md5Hex(password));
+		  long newUserPK = database.insert(ExaniiSimulatorUser.TABLE_NAME,  null, values);
+		  return newUserPK;
 	  }
 
 

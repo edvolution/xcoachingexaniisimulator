@@ -1,6 +1,6 @@
 package com.xcoaching.exanii.simulator.data.helpers;
 
-import com.xcoaching.exanii.simulator.data.contracts.ExaniSimulatorUserContract.ExanniSimulatorUser;
+import com.xcoaching.exanii.simulator.data.contracts.ExaniSimulatorUserContract.ExaniiSimulatorUser;
 import com.xcoaching.exanii.simulator.data.contracts.ExaniiSimulatorExamContract.ExaniiSimulatorExam;
 
 import android.content.Context;
@@ -22,10 +22,10 @@ public class ExaniiSimulatorDBOpenHelper extends SQLiteOpenHelper {
 
 
 	private static final String SQL_CREATE_USER_TABLE = 
-			"CREATE TABLE " + ExanniSimulatorUser.TABLE_NAME + " (" 
-            + ExanniSimulatorUser.COLUMN_NAME_USER_ID +  INTEGER_TYPE + PRIMARY_KEY_AUTOINCREMENT + COMMA_SEP 
-            + ExanniSimulatorUser.COLUMN_NAME_USER_NAME + TEXT_TYPE + COMMA_SEP
-			+ ExanniSimulatorUser.COLUMN_NAME_PASSWORD + TEXT_TYPE + ");";
+			"CREATE TABLE " + ExaniiSimulatorUser.TABLE_NAME + " (" 
+            + ExaniiSimulatorUser.COLUMN_NAME_USER_ID +  INTEGER_TYPE + PRIMARY_KEY_AUTOINCREMENT + COMMA_SEP 
+            + ExaniiSimulatorUser.COLUMN_NAME_USER_NAME + TEXT_TYPE + COMMA_SEP
+			+ ExaniiSimulatorUser.COLUMN_NAME_PASSWORD + TEXT_TYPE + ");";
 	
 	private static final String SQL_CREATE_EXAM_TABLE = 
 			"CREATE TABLE " + ExaniiSimulatorExam.TABLE_NAME + "(" 
@@ -42,7 +42,7 @@ public class ExaniiSimulatorDBOpenHelper extends SQLiteOpenHelper {
 			+ ExaniiSimulatorExam.COLUMN_NAME_RESULT_QUI + INTEGER_TYPE + COMMA_SEP 
 			+ ExaniiSimulatorExam.COLUMN_NAME_RESULT_BIO + INTEGER_TYPE + COMMA_SEP  			
 			+ FOREIGN_KEY + "(" + ExaniiSimulatorExam.COLUMN_NAME_USER_ID 
-			+ ") REFERENCES " + ExanniSimulatorUser.TABLE_NAME + " ( " + ExanniSimulatorUser.COLUMN_NAME_USER_ID + ")"			
+			+ ") REFERENCES " + ExaniiSimulatorUser.TABLE_NAME + " ( " + ExaniiSimulatorUser.COLUMN_NAME_USER_ID + ")"			
 		    + ");";					
 			
     public ExaniiSimulatorDBOpenHelper(Context context) {

@@ -4,7 +4,7 @@ import org.apache.commons.codec.digest.DigestUtils;
 
 import com.xcoaching.exanii.simulator.R;
 import com.xcoaching.exanii.simulator.data.contracts.ExaniSimulatorUserContract;
-import com.xcoaching.exanii.simulator.data.contracts.ExaniSimulatorUserContract.ExanniSimulatorUser;
+import com.xcoaching.exanii.simulator.data.contracts.ExaniSimulatorUserContract.ExaniiSimulatorUser;
 import com.xcoaching.exanii.simulator.data.helpers.ExaniiSimulatorDBOpenHelper;
 
 import android.content.Intent;
@@ -34,7 +34,7 @@ public class ExaniiSimulatorStartActivity extends ActionBarActivity {
 	    		
 	    ExaniiSimulatorDBOpenHelper exaniiSimulatorDBOpenHelper = new ExaniiSimulatorDBOpenHelper(this);
 	    SQLiteDatabase db = exaniiSimulatorDBOpenHelper.getReadableDatabase();	   
-	    String[] userProjection = {ExanniSimulatorUser.COLUMN_NAME_USER_ID, ExanniSimulatorUser.COLUMN_NAME_USER_NAME, ExanniSimulatorUser.COLUMN_NAME_PASSWORD};
+	    String[] userProjection = {ExaniiSimulatorUser.COLUMN_NAME_USER_ID, ExaniiSimulatorUser.COLUMN_NAME_USER_NAME, ExaniiSimulatorUser.COLUMN_NAME_PASSWORD};
 	    
 	    
 	}
