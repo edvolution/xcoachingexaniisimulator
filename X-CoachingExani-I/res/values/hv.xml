@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hv_1">1. ¿A qué se refiere el autor cuando dice grave peligro, al final del segundo párrafo?</string>
+    <string name="hv_1_a">Al antifascismo</string>
+    <string name="hv_1_b">A un asunto urgente</string>
+    <string name="hv_1_c">A la lucha contra Nixon</string>
+    <string name="hv_1_d">Al fascismo</string>
+</resources>
