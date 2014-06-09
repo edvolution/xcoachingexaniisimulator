@@ -16,19 +16,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class ExaniiSimulatorStartActivity extends ActionBarActivity {
+public class ExaniiSimulatorTestActivity extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_xcoaching_exanii_simulator_start);
+		setContentView(R.layout.activity_xcoaching_exanii_simulator_test);
 
 		if (savedInstanceState == null) {
 			getSupportFragmentManager().beginTransaction().add(R.id.container, new StartScreenFragment()).commit();
 		}
 		
 		
-	    Intent intent = getIntent();
+	   /* Intent intent = getIntent();
 	    String userName = intent.getStringExtra(ExaniiSimulatorTestCoverActivity.USR);
 	    String hashedPassword = DigestUtils.md5Hex(intent.getStringExtra(ExaniiSimulatorTestCoverActivity.PWD));
 	    		
@@ -36,7 +36,7 @@ public class ExaniiSimulatorStartActivity extends ActionBarActivity {
 	    SQLiteDatabase db = exaniiSimulatorDBOpenHelper.getReadableDatabase();	   
 	    String[] userProjection = {ExaniiSimulatorUser.COLUMN_NAME_USER_ID, ExaniiSimulatorUser.COLUMN_NAME_USER_NAME, ExaniiSimulatorUser.COLUMN_NAME_PASSWORD};
 	    
-	    
+	    */
 	}
 
 	public static class StartScreenFragment extends Fragment {
@@ -46,7 +46,7 @@ public class ExaniiSimulatorStartActivity extends ActionBarActivity {
 
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_xcoaching_exanii_simulator_start,container, false);
+			View rootView = inflater.inflate(R.layout.fragment_xcoaching_exanii_simulator_test,container, false);
 			return rootView;
 		}
 	}

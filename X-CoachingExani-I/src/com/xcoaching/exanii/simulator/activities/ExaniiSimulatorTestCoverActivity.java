@@ -29,9 +29,9 @@ public class ExaniiSimulatorTestCoverActivity extends ActionBarActivity {
 		
 	}
 	
-	public void displayStartActivity(View view) {
+	public void displayTestActivity(View view) {
 	 	   
-		 	Intent intent = new Intent(this, ExaniiSimulatorStartActivity.class);
+		 	Intent intent = new Intent(this, ExaniiSimulatorTestActivity.class);
 		    EditText applicantName = (EditText) findViewById(R.id.exanii_simulator_test_cover_applicant_name_input);
 		    EditText applicantId = (EditText) findViewById(R.id.exanii_simulator_test_cover_applicant_id_input);
 		    EditText usr = (EditText) findViewById(R.id.exanii_simulator_test_cover_applicant_user_input);

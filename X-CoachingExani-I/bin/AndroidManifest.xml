@@ -41,7 +41,7 @@
                 android:value="com.xcoaching.exanii.simulator.ExaniiSimulatorInstructionsActivity" />
         </activity>
         <activity
-            android:name="com.xcoaching.exanii.simulator.activities.ExaniiSimulatorStartActivity"
+            android:name="com.xcoaching.exanii.simulator.activities.ExaniiSimulatorTestActivity"
             android:label="@string/title_activity_exanii_simulator_start"
             android:parentActivityName="com.xcoaching.exanii.simulator.activities.ExaniiSimulatorTestCoverActivity" >
             <meta-data

@@ -24,5 +24,8 @@
     <string name="exanii_simulator_test_cover_applicant_session_label">USUARIO</string>
     <string name="exanii_simulator_test_cover_applicant_pwd_label">CONTRASEÑA</string>
     <string name="title_activity_exanii_simulator_start">Menú Principal</string>
+    <string name="exanii_simulator_next_button_text">Siguiente</string>
+    <string name="exanii_simulator_test_question_resource_image_text">Question Image Resource</string>
+    
 
 </resources>
