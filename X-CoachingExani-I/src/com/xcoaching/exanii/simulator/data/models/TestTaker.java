@@ -1,6 +1,6 @@
 package com.xcoaching.exanii.simulator.data.models;
 
-public class User {	
+public class TestTaker {	
 	
 	private long userId;
     private String userName, password;

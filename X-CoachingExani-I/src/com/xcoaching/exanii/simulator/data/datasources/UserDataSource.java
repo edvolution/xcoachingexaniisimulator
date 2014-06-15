@@ -5,7 +5,7 @@ import org.apache.commons.codec.digest.DigestUtils;
 import com.xcoaching.exanii.simulator.activities.ExaniiSimulatorTestCoverActivity;
 import com.xcoaching.exanii.simulator.data.contracts.ExaniSimulatorUserContract.ExaniiSimulatorUser;
 import com.xcoaching.exanii.simulator.data.helpers.ExaniiSimulatorDBOpenHelper;
-import com.xcoaching.exanii.simulator.data.models.User;
+import com.xcoaching.exanii.simulator.data.models.TestTaker;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -41,7 +41,7 @@ public class UserDataSource {
 	  }
 
 
-	  public User getUsers(String userName) {
+	  public TestTaker getUsers(String userName) {
 	    /*List<Comment> comments = new ArrayList<Comment>();
 
 	    Cursor cursor = database.query(MySQLiteHelper.TABLE_COMMENTS,
@@ -59,8 +59,8 @@ public class UserDataSource {
 		  return null;
 	  }
 
-	  private User cursorToUser(Cursor cursor) {
-		User user = new User();
+	  private TestTaker cursorToUser(Cursor cursor) {
+		TestTaker user = new TestTaker();
 	    user.setUserId(cursor.getLong(0));
 	    user.setUserName(cursor.getString(1));
 	    user.setPassword(cursor.getString(1));

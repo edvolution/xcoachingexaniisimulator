@@ -94,6 +94,21 @@
                     android:text="@string/hv_1_d"
                     android:textSize="@dimen/exanii_simulator_medium_answer_size" />
             </RadioGroup>
+            <TableRow
+                android:id="@+id/exanii_simulator_test_answers_resource_image_row"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/exanii_simulator_test_answers_resource_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/exanii_simulator_test_answer_resource_image_text"
+                    android:gravity="center_horizontal"
+                    android:src="@drawable/hv_1" />
+            </TableRow>
+            
         </TableLayout>
     </ScrollView>
 
