@@ -8,11 +8,13 @@ public class Question {
 	private String questionText;
 	private String[] answerChoices;
 	private String answerImageFileName;
+	private char selectedAnswer;
 	private char correctAnswer;
 	public final String IMAGE_FILE_EXTENSION = ".png";
 	public final char[] AVAILABLE_ANSWERS = new char[]{'a','b','c','d'};
 	public final char QUESTION_IDENTIFIER = 'q';
 	public final char ANSWER_IDENTIFIER = 'a';
+	private final char EMPTY_ANSWER = '-';
 
 	public Question(int questionNumber, String subject,
 			boolean isQuestionImage, boolean isQuestionText,
@@ -27,7 +29,9 @@ public class Question {
 			this.answerChoices[i] = new String(subject + subjectQuestionNumber + AVAILABLE_ANSWERS[i]);
 		}
 		this.answerImageFileName = isAnswerImage ? new String(subject + subjectQuestionNumber + ANSWER_IDENTIFIER + IMAGE_FILE_EXTENSION) : null;
+		this.selectedAnswer = EMPTY_ANSWER;
 		this.correctAnswer = correctAnswer;
+		
 	}
 	
 	public int getSubjectQuestionNumber() {
